@@ -1,6 +1,8 @@
+import axios from 'axios';
 import { useState } from 'react';
 
 const Register = () => {
+  const [role, setRole] = useState('1');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -12,11 +14,41 @@ const Register = () => {
   const [permanentAddress, setPermanentAddress] = useState('');
   const [presentAddress, setPresentAddress] = useState('');
   const [image, setImage] = useState('');
+
+  const handleForm = (e) => {
+    e.preventDefault();
+
+    const formData = new FormData();
+    formData.append('user_role', role * 1);
+    formData.append('name', name);
+    formData.append('email', email);
+    formData.append('password', password);
+    formData.append('c_password', confirmPassword);
+    formData.append('country_code', countryCode);
+    formData.append('contact', contact);
+    formData.append('gender', gender);
+    formData.append('dob', dob);
+    formData.append('permanent_address', permanentAddress);
+    formData.append('present_address', presentAddress);
+    formData.append('customer_image', image);
+
+    axios
+      .post('http://localhost:8000/api/signup', formData)
+      .then((response) => {
+        alert('Successfully added user');
+      })
+      .catch((error) => {
+        alert('Unable to add user');
+      });
+  };
+
   return (
     <>
       <form
         action=''
         className=' d-flex justify-content-center align-items-center'
+        encType='multipart/form-data'
+        onSubmit={handleForm}
       >
         <div className='w-50'>
           <div className='mb-3 mt-3 w-50 text-center'>
@@ -29,6 +61,8 @@ const Register = () => {
             <select
               className='form-select w-50'
               aria-label='Default select example'
+              value={role}
+              onChange={(e) => setRole(e.target.value)}
             >
               <option selected disabled>
                 Select user role below
