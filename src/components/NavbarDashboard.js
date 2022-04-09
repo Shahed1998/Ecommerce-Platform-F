@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const NavbarDashboard = () => {
   return (
     <nav className='navbar sticky-top navbar-expand-lg navbar-dark bg-dark px-1'>
       <Link to='/' className='navbar-brand'>
@@ -28,16 +28,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li class='nav-item mr-4'>
-            <Link to='/sign_up' className='nav-link'>
-              Sign up
+            <Link to='/profile' className='nav-link'>
+              Profile
             </Link>
           </li>
           <li class='nav-item mr-4'>
-            {/* <a class='nav-link' href='login'>
-                  <i class='fas fa-sign-in-alt'></i> Sign In
-                </a> */}
-            <Link to='/sign_in' className='nav-link'>
-              Sign In
+            <Link to='/logout' className='nav-link'>
+              Logout
             </Link>
           </li>
         </ul>
@@ -46,4 +43,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarDashboard;
