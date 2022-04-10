@@ -42,9 +42,7 @@ const Login = () => {
             <h1>Login</h1>
           </div>
           <div className='mb-3 mt-3'>
-            <label for='email' className='form-label'>
-              Email:
-            </label>
+            <label className='form-label'>Email:</label>
             <input
               type='email'
               className='form-control w-50'
@@ -56,9 +54,7 @@ const Login = () => {
             />
           </div>
           <div className='mb-3'>
-            <label for='pwd' className='form-label'>
-              Password:
-            </label>
+            <label className='form-label'>Password:</label>
             <input
               type='password'
               className='form-control w-50'

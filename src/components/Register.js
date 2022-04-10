@@ -55,9 +55,7 @@ const Register = () => {
             <h1>Register</h1>
           </div>
           <div className='mb-3'>
-            <label for='role' className='form-label'>
-              Join as:
-            </label>
+            <label className='form-label'>Join as:</label>
             <select
               className='form-select w-50'
               aria-label='Default select example'
@@ -73,9 +71,7 @@ const Register = () => {
             </select>
           </div>
           <div className='mb-3 mt-3'>
-            <label for='name' className='form-label'>
-              Name:
-            </label>
+            <label className='form-label'>Name:</label>
             <input
               type='text'
               className='form-control w-50'
@@ -87,9 +83,7 @@ const Register = () => {
             />
           </div>
           <div className='mb-3 mt-3'>
-            <label for='email' className='form-label'>
-              Email:
-            </label>
+            <label className='form-label'>Email:</label>
             <input
               type='email'
               className='form-control w-50'
@@ -101,9 +95,7 @@ const Register = () => {
             />
           </div>
           <div className='mb-3'>
-            <label for='pwd' className='form-label'>
-              Password:
-            </label>
+            <label className='form-label'>Password:</label>
             <input
               type='password'
               className='form-control w-50'
@@ -115,9 +107,7 @@ const Register = () => {
             />
           </div>
           <div className='mb-3'>
-            <label for='cpwd' className='form-label'>
-              Confirm Password:
-            </label>
+            <label className='form-label'>Confirm Password:</label>
             <input
               type='password'
               className='form-control w-50'
@@ -129,9 +119,7 @@ const Register = () => {
             />
           </div>
           <div className='mb-3'>
-            <label for='gender' className='form-label'>
-              Gender:
-            </label>
+            <label className='form-label'>Gender:</label>
             <select
               className='form-select w-50'
               aria-label='Default select example'
@@ -147,9 +135,7 @@ const Register = () => {
             </select>
           </div>
           <div className='mb-3'>
-            <label for='dob' className='form-label'>
-              Date of birth:
-            </label>
+            <label className='form-label'>Date of birth:</label>
             <input
               type='date'
               className='form-control w-50'
@@ -160,9 +146,7 @@ const Register = () => {
             />
           </div>
           <div className='mb-3'>
-            <label for='contact' className='form-label'>
-              Contact:
-            </label>
+            <label className='form-label'>Contact:</label>
             <div className='mb-3'>
               <select
                 className='form-select w-50'
@@ -189,9 +173,7 @@ const Register = () => {
             />
           </div>
           <div className='mb-3'>
-            <label for='permanent_address' className='form-label d-block'>
-              Permanent address:
-            </label>
+            <label className='form-label d-block'>Permanent address:</label>
             <textarea
               className='w-50'
               id='permanent_address'
@@ -200,9 +182,7 @@ const Register = () => {
             ></textarea>
           </div>
           <div className='mb-3'>
-            <label for='present_address' className='form-label d-block'>
-              Present address:
-            </label>
+            <label className='form-label d-block'>Present address:</label>
             <textarea
               className='w-50'
               id='present_address'
@@ -211,9 +191,7 @@ const Register = () => {
             ></textarea>
           </div>
           <div className='mb-3'>
-            <label for='user_img' className='form-label d-block'>
-              User image:
-            </label>
+            <label className='form-label d-block'>User image:</label>
             <input
               type='file'
               onChange={(e) => setImage(e.target.files[0])}

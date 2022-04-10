@@ -22,17 +22,22 @@ const NavbarDashboard = () => {
         id='navbarNav'
       >
         <ul className='navbar-nav'>
-          <li class='nav-item active mr-4'>
+          <li className='nav-item active mr-4'>
             <Link to='/' className='nav-link'>
               Home
             </Link>
           </li>
-          <li class='nav-item mr-4'>
+          <li className='nav-item mr-4'>
             <Link to='/profile' className='nav-link'>
               Profile
             </Link>
           </li>
-          <li class='nav-item mr-4'>
+          <li className='nav-item mr-4'>
+            <Link to='/edit' className='nav-link'>
+              Edit
+            </Link>
+          </li>
+          <li className='nav-item mr-4'>
             <Link to='/logout' className='nav-link'>
               Logout
             </Link>

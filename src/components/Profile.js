@@ -40,81 +40,83 @@ const Profile = () => {
   }, []);
 
   return (
-    <section class='inner-content-dashboard'>
-      <div class='inner-content'>
-        <section class='profile-pic'>
+    <section className='inner-content-dashboard'>
+      <div className='inner-content'>
+        <section className='profile-pic'>
           <img src={image} className='rounded-circle w-5' alt='profile-img' />
         </section>
         <table>
-          <tr>
-            <td>Joined as:</td>
-            <td>
-              <input type='text' name='' id='' disabled value={role} />
-            </td>
-          </tr>
-          <tr>
-            <td>Username:</td>
-            <td>
-              <input type='text' name='uname' id='' disabled value={name} />
-            </td>
-          </tr>
-          <tr>
-            <td>Email:</td>
-            <td>
-              <input type='text' name='email' id='' disabled value={email} />
-            </td>
-          </tr>
-          <tr>
-            <td>Gender:</td>
-            <td>
-              <input type='text' name='' id='' disabled value={gender} />
-            </td>
-          </tr>
-          <tr>
-            <td>Date of birth:</td>
-            <td>
-              <input type='date' name='dob' id='' disabled value={dob} />
-            </td>
-          </tr>
-          <tr>
-            <td>Contact number:</td>
-            <td>
-              <input
-                type='text'
-                name='contact'
-                id=''
-                disabled
-                value={`${country_code}${contact}`}
-                size='15'
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>Present address:</td>
-            <td>
-              <textarea
-                disabled
-                name='present_address'
-                id=''
-                cols='25'
-                rows='5'
-                value={presentAddress}
-              ></textarea>
-            </td>
-          </tr>
-          <tr>
-            <td>Permanent address:</td>
-            <td>
-              <textarea
-                disabled
-                name='permanent_address'
-                id=''
-                cols='25'
-                rows='5'
-                value={permanentAddress}
-              ></textarea>
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>Joined as:</td>
+              <td>
+                <input type='text' name='' id='' disabled value={role} />
+              </td>
+            </tr>
+            <tr>
+              <td>Username:</td>
+              <td>
+                <input type='text' name='uname' id='' disabled value={name} />
+              </td>
+            </tr>
+            <tr>
+              <td>Email:</td>
+              <td>
+                <input type='text' name='email' id='' disabled value={email} />
+              </td>
+            </tr>
+            <tr>
+              <td>Gender:</td>
+              <td>
+                <input type='text' name='' id='' disabled value={gender} />
+              </td>
+            </tr>
+            <tr>
+              <td>Date of birth:</td>
+              <td>
+                <input type='date' name='dob' id='' disabled value={dob} />
+              </td>
+            </tr>
+            <tr>
+              <td>Contact number:</td>
+              <td>
+                <input
+                  type='text'
+                  name='contact'
+                  id=''
+                  disabled
+                  value={`${country_code}${contact}`}
+                  size='15'
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Present address:</td>
+              <td>
+                <textarea
+                  disabled
+                  name='present_address'
+                  id=''
+                  cols='25'
+                  rows='5'
+                  value={presentAddress}
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Permanent address:</td>
+              <td>
+                <textarea
+                  disabled
+                  name='permanent_address'
+                  id=''
+                  cols='25'
+                  rows='5'
+                  value={permanentAddress}
+                ></textarea>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </section>

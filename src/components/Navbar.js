@@ -22,20 +22,17 @@ const Navbar = () => {
         id='navbarNav'
       >
         <ul className='navbar-nav'>
-          <li class='nav-item active mr-4'>
+          <li className='nav-item active mr-4'>
             <Link to='/' className='nav-link'>
               Home
             </Link>
           </li>
-          <li class='nav-item mr-4'>
+          <li className='nav-item mr-4'>
             <Link to='/sign_up' className='nav-link'>
               Sign up
             </Link>
           </li>
-          <li class='nav-item mr-4'>
-            {/* <a class='nav-link' href='login'>
-                  <i class='fas fa-sign-in-alt'></i> Sign In
-                </a> */}
+          <li className='nav-item mr-4'>
             <Link to='/sign_in' className='nav-link'>
               Sign In
             </Link>

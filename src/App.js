@@ -7,6 +7,7 @@ import Login from './components/Login';
 import NavbarDashboard from './components/NavbarDashboard';
 import Logout from './components/Logout';
 import Profile from './components/Profile';
+import Edit from './components/Edit';
 
 function App() {
   if (!localStorage.getItem('uid')) {
@@ -28,6 +29,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path='/profile' element={<Profile></Profile>}></Route>
+          <Route path='/edit' element={<Edit></Edit>}></Route>
           <Route path='/logout' element={<Logout></Logout>}></Route>
           <Route path='*' element={<NoPage />} />
         </Routes>
