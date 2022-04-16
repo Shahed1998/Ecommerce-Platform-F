@@ -22,11 +22,6 @@ const NavbarDashboard = () => {
         id='navbarNav'
       >
         <ul className='navbar-nav'>
-          <li className='nav-item active mr-4'>
-            <Link to='/' className='nav-link'>
-              Home
-            </Link>
-          </li>
           <li className='nav-item mr-4'>
             <Link to='/profile' className='nav-link'>
               Profile
