@@ -33,6 +33,11 @@ const NavbarDashboard = () => {
             </Link>
           </li>
           <li className='nav-item mr-4'>
+            <Link to='/help' className='nav-link'>
+              Help
+            </Link>
+          </li>
+          <li className='nav-item mr-4'>
             <Link to='/logout' className='nav-link'>
               Logout
             </Link>

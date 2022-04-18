@@ -43,7 +43,7 @@ const Profile = () => {
     <section className='inner-content-dashboard'>
       <div className='inner-content'>
         <section className='profile-pic'>
-          <img src={image} className='rounded-circle w-5' alt='profile-img' />
+          <img src={image} style={{width:"10%"}} alt='profile-img' />
         </section>
         <table>
           <tbody>

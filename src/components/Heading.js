@@ -7,6 +7,7 @@ import Login from './Login';
 import Profile from './Profile';
 import Edit from './Edit';
 import Logout from './Logout';
+import Help from './Help';
 
 const Heading = () => {
   if (localStorage.getItem('uid')) {
@@ -16,6 +17,7 @@ const Heading = () => {
         <Routes>
           <Route path='/profile' element={<Profile></Profile>}></Route>
           <Route path='/edit' element={<Edit></Edit>}></Route>
+          <Route path="/help" element={<Help></Help>}></Route>
           <Route path='/logout' element={<Logout></Logout>}></Route>
           <Route path='*' element={<NoPage />} />
         </Routes>
